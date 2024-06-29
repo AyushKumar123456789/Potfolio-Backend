@@ -7,7 +7,10 @@ app.use(cors());
 app.use(express.json());
 
 async function main() {
-  await mongoose.connect("mongodb://localhost:27017/movieReviews", {});
+  await mongoose.connect(
+    "mongodb+srv://ayushjitendra28:cqwOlzTVgwiXZZ92@cluster0.capeqn3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    {}
+  );
   console.log("Connected to MongoDB");
 }
 
