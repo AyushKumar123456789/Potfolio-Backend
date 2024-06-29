@@ -28,6 +28,7 @@ const bookreviewSchema = new mongoose.Schema({
   text: String,
   link: String,
   status: { type: String, enum: ["completed", "reading"] }, // Status field to categorize books
+  completion: Number,
   type: { type: String, enum: ["book"] }, // Type field to specify book reviews
 });
 
